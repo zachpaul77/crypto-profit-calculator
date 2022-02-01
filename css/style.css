@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+body {
+    text-align: center;
+    padding: 60px;
+    background: url('../background-picture.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+#form label {
+    font-size: 25px;
+}
+#form input {
+    font-size: 16px;
+    padding: 5px;
+    margin-top: 2px;
+    margin-bottom: 12px;
+}
+#form button {
+    font-size: 30px;
+    padding: 8px 80px;
+    margin-top: 10px;
+}
+#errors {
+    font-size: 20px;
+    color: red;
+}
+
+#results {
+    font-size: 25px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col2 {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+footer {
+    padding: 10px 0;
+}
+

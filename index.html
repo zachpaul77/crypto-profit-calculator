@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crypto Profitability Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/crypto-name-list.js"></script>
+    <script defer src="js/validation.js"></script>
+</head>
+
+<body>
+    <h1>Crypto Investment Calculator</h1>
+    <h2>How much did you gain or lose? (USD).</h2>
+
+    <form id="form" action="/" method="GET">
+        <div>
+            <label for="currency">Currency</label><br />
+            <input id="currency" type="text" list="currency_list">
+            <datalist id="currency_list"></datalist>
+        </div>
+        <div>
+            <label for="amount">Amount Invested (USD)</label><br />
+            <input type="text" id="amount" name="amount">
+        </div>
+        <div>
+            <label for="date">Date Invested (YYYY-MM-DD)</label><br />
+            <input type="text" id="date" name="date">
+        </div>
+        <p id="errors"></p>
+        <button type="submit">Submit</button>
+    </form>
+
+    <table id="results">
+        <!-- Insert Javascript results here -->
+    </table>
+
+    <footer>
+        <p>Created by Zachary Costa <a href="https://github.com/zachpaul77/crypto-profit-calculator">(Github)</a></p>
+        <p>Brought to you by <a href="https://www.alphavantage.co/">Alpha Vantage API</a></p>
+    </footer>
+
+    <div class="bg-image"></div>
+
+</body>
+</html>
