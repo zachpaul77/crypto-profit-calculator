@@ -43,6 +43,9 @@ function isValidCurrency(arr, value, start, end) {
 function isValidDate() {
     var dateSplit = date.value.split('-');
     if (dateSplit.length == 3) {
+        // Reverse array for API (DD-MM-YYYY --> YYYY-MM-DD)
+        dateSplit.reverse();
+
         // Make sure only digits are included
         for (let i=0; i<3; i++) {
             if (!dateSplit[i].match(onlyDigitsReg)) {
@@ -126,8 +129,12 @@ function sendRequest() {
                 "</tr>";
 
             } catch (e) {
-                results.innerHTML = 'An error has occurred. Try entering a newer date.'
+                results.innerHTML = 'An error has occurred. Try entering a newer date.';
             }
+
+            // Format date to DD-MM-YYYY again
+            date.value = date.value.split('-').reverse().join('-');
+
         }
     });
 
