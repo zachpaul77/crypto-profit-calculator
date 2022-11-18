@@ -6,3 +6,5 @@ Simple tool which shows the following information about a cryptocurrency investm
 * Percentage increase / decrease
 * Profit
 * Total Balance
+
+![](images/webpage.png)
